@@ -1,0 +1,262 @@
+@font-face {
+    font-family: korea;
+    src: url(./GeneralSans-Medium.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.bounding{
+    overflow: hidden;
+    width: fit-content;
+}
+.bounding .bounding-elem{
+
+    transform: translateY(100%);
+}
+#main{
+    width: 100%;
+    background-color: black;
+}
+#hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+    font-family: 'korea';
+}
+#nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+#heading{
+    margin-top: 95px;
+
+}
+#heading h1{
+    margin-left: 30px;
+    opacity: 0.67;
+    line-height: 0.9;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: 'korea';
+    font-weight: 400;
+}
+#heading #secondh1{
+    margin-left: 190px;
+    
+}
+.blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+}
+.blocktext h5{
+    margin-top: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'korea';
+    font-weight: 300;
+}
+#smallheading{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: 'korea';
+    margin-top: 100px;
+    padding-right: 50px;
+}
+#smallheading h5{
+    text-align: right;
+     text-transform: uppercase;
+     margin-top: .6vw;
+     font-size: 1.2vw;
+     font-weight: 400;
+}
+#herofooter{
+    padding: 0 2.2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'korea';
+}
+#herofooter a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    background-color: #9d9d9d;
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+}
+#second{
+    padding-left: 3vw;
+    color: white;
+    padding-right: 10vw;
+    padding-top: 190px;
+    background-color: black;
+    width: 100%;
+    /* height: 100vh; */
+}
+.elem{
+    position: relative;
+    font-family: 'korea';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #888 ;
+    padding: 2.7vw 3vw;
+    padding-right: 0;
+}
+.elem h1{
+    font-family: 'korea';
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: 0.7;
+    font-weight: 500;
+}
+.elem h5{
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+.elemlast{
+    border-bottom: 2px solid #888 ;
+}
+.elem img{
+    opacity: 0;
+    /* display: none; */
+    height: 140%;
+    position: absolute;
+    z-index: 999;
+}
+#about{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10vw 10vw;
+    padding-left: 35vw;
+    width: 100%;
+    background-color: black;
+}
+#textabout{
+    width: 30rem;
+ }
+#textabout h5{
+    text-transform: uppercase;
+    opacity: .5;
+    font-weight: 400;
+    font-family: 'korea';
+    font-size: 1vw;
+    /* margin-bottom: 3px; */
+}
+#textabout p{
+    line-height: 1.4;
+    font-size: 1.3vw;
+    opacity: 0.8;
+    font-family: 'korea';
+    word-spacing: 2px;
+    font-weight: 100; 
+    padding-bottom: 20px;
+}
+#about img{
+  width: 250px;
+}
+#textabout a{
+    padding: 10px 22px;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: 'korea';
+    font-size: 14px;
+}
+#subscribe{
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    padding-bottom: 8vw;
+    font-family: 'korea';
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+    font-weight: 300;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer{
+    font-family: 'korea';
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 30px;
+}
+#footerleft{
+   display: flex;
+   gap: 20px;
+}
+#footerleft{
+    font-size: 20px;
+    font-weight: 400;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footerright a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    gap: 15px;
+}
