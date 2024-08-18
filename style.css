@@ -142,7 +142,6 @@ html,body{
 }
 .elem{
     position: relative;
-    font-family: 'korea';
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,6 +149,7 @@ html,body{
     border-top: 1px solid #888 ;
     padding: 2.7vw 3vw;
     padding-right: 0;
+    font-family: 'korea';
 }
 .elem h1{
     font-family: 'korea';
@@ -167,10 +167,12 @@ html,body{
 }
 .elem img{
     opacity: 0;
+    pointer-events: none;
     /* display: none; */
     height: 140%;
     position: absolute;
     z-index: 999;
+    transform: translate(-50%, -50%);
 }
 #about{
     color: white;

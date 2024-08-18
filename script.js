@@ -3,6 +3,7 @@
 // attach locomotive scroll min js
 // some code from locomotive scroll docs/js
 
+var timeout;
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
@@ -56,7 +57,6 @@ tl.from("#nav",{
 firstPage();
 
 
-var timeout;
 function circleMove(){
     // define default scale value
     var xscale = 1;
@@ -93,12 +93,26 @@ circleMove();
 
 
 document.querySelectorAll(".elem").forEach(function(elem){
+    var rotate = 0;
+    var diffrot = 0;
+
     elem.addEventListener("mousemove", function(dets){
         var diff = dets.clientY - elem.getBoundingClientRect().top;
+        diffrot = dets.clientX - rotate;
+        rotate = dets.clientX; 
         gsap.to(elem.querySelector("img"),{
             opacity:1,
-            ease : Power1,
-            top: diff
+            ease : Power3,
+            top: diff,
+            left: dets.clientX,
+            rotate: gsap.utils.clamp(-20,20, diffrot * 0.5),
+        })
+    })
+
+    elem.addEventListener("mouseleave", function(dets){
+        gsap.to(elem.querySelector("img"),{
+            opacity:0,
+            ease : Power3,
         })
     })
 })
