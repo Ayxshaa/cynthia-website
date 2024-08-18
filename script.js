@@ -1,7 +1,4 @@
-// smooth scrolling k liye lgate hai locomotive 
-// step attach loco scroll css
-// attach locomotive scroll min js
-// some code from locomotive scroll docs/js
+
 
 var timeout;
 const scroll = new LocomotiveScroll({
